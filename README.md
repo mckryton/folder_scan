@@ -5,3 +5,5 @@ directory and write them into an Excel list.
 
 ## Usage
 Open folder_scan.xlsm in Excel. Activate macros. Press the button. That's it.
+
+![sample screenshot](doc/screenshot.png)
