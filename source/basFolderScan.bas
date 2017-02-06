@@ -161,7 +161,7 @@ Public Property Get ScanFolderName() As Range
     Dim rngScanFolder As Range
     
     On Error GoTo name_not_found
-    Set ScanFolderName = ThisWorkbook.Names("ScanFolder").RefersToRange
+    Set ScanFolderName = ActiveSheet.Names("ScanFolder").RefersToRange
     Exit Property
     
 name_not_found:

@@ -33,7 +33,7 @@ Public Property Get ResultListStart() As Range
     Dim rngResultList As Range
     
     On Error GoTo name_not_found
-    Set ResultListStart = ThisWorkbook.Names("StartList").RefersToRange
+    Set ResultListStart = ActiveSheet.Names("StartList").RefersToRange
     Exit Property
     
 name_not_found:
@@ -48,7 +48,7 @@ Public Property Get FilenamesListStart() As Range
     Dim rngResultList As Range
     
     On Error GoTo name_not_found
-    Set FilenamesListStart = ThisWorkbook.Names("Filenames").RefersToRange
+    Set FilenamesListStart = ActiveSheet.Names("Filenames").RefersToRange
     Exit Property
     
 name_not_found:

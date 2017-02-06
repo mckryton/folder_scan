@@ -29,3 +29,10 @@ Feature: update list
      And the file is not in the list
     When I run the macro
     Then the name of this file will be ignored
+
+  Scenario: copy list
+    Given a list refers to a folder
+    When I copy the list to a new sheet into the same Excel file
+     And I change the folder path to another folder in the new sheet
+    Then the macro will the use this another folder to update the new sheet
+     And the macro will use the original folder when updating the original sheet
